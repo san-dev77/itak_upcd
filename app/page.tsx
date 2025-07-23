@@ -4,11 +4,20 @@ import HeroSlider from "./components/HeroSlider";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Building2, Globe, Briefcase, GraduationCap, FlaskConical, Users, Lightbulb, Earth,
-  Award, BookOpen, CheckCircle, ArrowRight,
-  StarsIcon
+  Building2,
+  Globe,
+  Briefcase,
+  GraduationCap,
+  FlaskConical,
+  Users,
+  Lightbulb,
+  Earth,
+  Award,
+  BookOpen,
+  CheckCircle,
+  ArrowRight,
+  StarsIcon,
 } from "lucide-react";
-import { Star, Stars } from "lucide";
 
 export default function Home() {
   return (
@@ -35,11 +44,16 @@ export default function Home() {
               Excellence Académique en Chiffres
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              L'<span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">UPCD</span> en Chiffres
+              L&apos;
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                UPCD
+              </span>{" "}
+              en Chiffres
             </h2>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-              Des résultats concrets qui témoignent de notre excellence académique et de notre engagement
-              envers la réussite de nos étudiants dans un environnement d'apprentissage moderne.
+              Des résultats concrets qui témoignent de notre excellence
+              académique et de notre engagement envers la réussite de nos
+              étudiants dans un environnement d&apos;apprentissage moderne.
             </p>
           </div>
 
@@ -56,8 +70,12 @@ export default function Home() {
                       <CheckCircle className="w-4 h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">2</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Facultés d'Excellence</h3>
+                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                    2
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Facultés d&apos;Excellence
+                  </h3>
                   <p className="text-blue-200 text-sm leading-relaxed">
                     FDECO & FAST offrant des formations complètes et reconnues
                   </p>
@@ -82,8 +100,12 @@ export default function Home() {
                       <StarsIcon className="w-4 h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">20+</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Filières Spécialisées</h3>
+                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">
+                    20+
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Filières Spécialisées
+                  </h3>
                   <p className="text-blue-200 text-sm leading-relaxed">
                     Formations diversifiées adaptées aux besoins du marché
                   </p>
@@ -108,8 +130,12 @@ export default function Home() {
                       <GraduationCap className="w-4 h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">3</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Niveaux de Diplômes</h3>
+                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
+                    3
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Niveaux de Diplômes
+                  </h3>
                   <p className="text-blue-200 text-sm leading-relaxed">
                     DUT, Licence et Master pour une progression complète
                   </p>
@@ -134,8 +160,12 @@ export default function Home() {
                       <Users className="w-4 h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">1000+</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Étudiants Actifs</h3>
+                  <div className="text-6xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                    1000+
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Étudiants Actifs
+                  </h3>
                   <p className="text-blue-200 text-sm leading-relaxed">
                     Communauté dynamique et multiculturelle engagée
                   </p>
@@ -153,18 +183,24 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-4xl font-bold text-blue-400 mb-2">85%</div>
-              <p className="text-white font-semibold">Taux d'Insertion</p>
+              <p className="text-white font-semibold">Taux d&apos;Insertion</p>
               <p className="text-blue-200 text-sm mt-1">Professionnelle</p>
             </div>
             <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-4xl font-bold text-indigo-400 mb-2">15+</div>
-              <p className="text-white font-semibold">Années d'Expérience</p>
-              <p className="text-blue-200 text-sm mt-1">Formation d'Excellence</p>
+              <p className="text-white font-semibold">
+                Années d&apos;Expérience
+              </p>
+              <p className="text-blue-200 text-sm mt-1">
+                Formation d&apos;Excellence
+              </p>
             </div>
             <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-4xl font-bold text-cyan-400 mb-2">100+</div>
               <p className="text-white font-semibold">Partenaires</p>
-              <p className="text-blue-200 text-sm mt-1">Entreprises & Institutions</p>
+              <p className="text-blue-200 text-sm mt-1">
+                Entreprises & Institutions
+              </p>
             </div>
           </div>
         </div>
@@ -177,11 +213,13 @@ export default function Home() {
               Excellence Académique
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pourquoi choisir l'<span className="text-blue-600">UPCD</span> ?
+              Pourquoi choisir l&apos;
+              <span className="text-blue-600">UPCD</span> ?
             </h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Une université moderne qui forme les leaders de demain grâce à un enseignement d'excellence,
-              des partenariats internationaux et un accompagnement personnalisé vers la réussite professionnelle.
+              Une université moderne qui forme les leaders de demain grâce à un
+              enseignement d&apos;excellence, des partenariats internationaux et
+              un accompagnement personnalisé vers la réussite professionnelle.
             </p>
           </div>
 
@@ -203,11 +241,15 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mr-4">
                     <Building2 className="text-white w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Campus Moderne</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Campus Moderne
+                  </h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Situé au centre-ville de Kati, notre campus ultramoderne dispose d'équipements de pointe :
-                  laboratoires informatiques, bibliothèque numérique, salles de conférence équipées et espaces de détente.
+                  Situé au centre-ville de Kati, notre campus ultramoderne
+                  dispose d&apos;équipements de pointe : laboratoires
+                  informatiques, bibliothèque numérique, salles de conférence
+                  équipées et espaces de détente.
                 </p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-800 transition-colors">
                   <span>Découvrir le campus</span>
@@ -233,11 +275,15 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mr-4">
                     <Globe className="text-white w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Ouverture Internationale</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Ouverture Internationale
+                  </h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Partenariats privilégiés avec l'Espagne (CEDIFA), opportunités de stages à Séville,
-                  échanges académiques et programmes de mobilité internationale pour une formation globale.
+                  Partenariats privilégiés avec l&apos;Espagne (CEDIFA),
+                  opportunités de stages à Séville, échanges académiques et
+                  programmes de mobilité internationale pour une formation
+                  globale.
                 </p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-800 transition-colors">
                   <span>Voir les partenariats</span>
@@ -263,11 +309,15 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl flex items-center justify-center mr-4">
                     <Briefcase className="text-white w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Insertion Professionnelle</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Insertion Professionnelle
+                  </h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Taux d'insertion de 85% grâce à nos partenariats entreprises, stages obligatoires,
-                  accompagnement personnalisé et réseau d'anciens diplômés actifs dans tous les secteurs.
+                  Taux d&apos;insertion de 85% grâce à nos partenariats
+                  entreprises, stages obligatoires, accompagnement personnalisé
+                  et réseau d&apos;anciens diplômés actifs dans tous les
+                  secteurs.
                 </p>
                 <div className="flex items-center text-indigo-600 font-semibold group-hover:text-indigo-800 transition-colors">
                   <span>Voir les débouchés</span>
@@ -291,14 +341,18 @@ export default function Home() {
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
-              Notre Engagement pour l'Excellence
+              Notre Engagement pour l&apos;Excellence
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              Nos <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Missions</span>
+              Nos{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                Missions
+              </span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed">
-              L'UPCD s'engage dans six missions fondamentales pour l'excellence académique,
-              l'innovation technologique et le développement durable de l'Afrique et du Mali.
+              L&apos;UPCD s&apos;engage dans six missions fondamentales pour
+              l&apos;excellence académique, l&apos;innovation technologique et
+              le développement durable de l&apos;Afrique et du Mali.
             </p>
           </div>
 
@@ -313,13 +367,16 @@ export default function Home() {
                     <GraduationCap className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Enseignement Supérieur</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Enseignement Supérieur
+                    </h3>
                     <div className="w-12 h-0.5 bg-blue-500 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Formation de qualité dans l'enseignement supérieur avec des programmes académiques
-                  rigoureux et adaptés aux standards internationaux pour préparer les futurs leaders.
+                  Formation de qualité dans l&apos;enseignement supérieur avec
+                  des programmes académiques rigoureux et adaptés aux standards
+                  internationaux pour préparer les futurs leaders.
                 </p>
               </div>
             </div>
@@ -333,13 +390,16 @@ export default function Home() {
                     <FlaskConical className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Recherche Scientifique</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Recherche Scientifique
+                    </h3>
                     <div className="w-12 h-0.5 bg-indigo-500 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Recherche fondamentale et appliquée avec diffusion des résultats pour contribuer
-                  à l'avancement des connaissances et au développement technologique.
+                  Recherche fondamentale et appliquée avec diffusion des
+                  résultats pour contribuer à l&apos;avancement des
+                  connaissances et au développement technologique.
                 </p>
               </div>
             </div>
@@ -353,13 +413,16 @@ export default function Home() {
                     <Users className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Formation Professionnelle</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Formation Professionnelle
+                    </h3>
                     <div className="w-12 h-0.5 bg-blue-600 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Perfectionnement des cadres supérieurs et formation continue pour répondre
-                  aux besoins évolutifs du marché du travail et des entreprises.
+                  Perfectionnement des cadres supérieurs et formation continue
+                  pour répondre aux besoins évolutifs du marché du travail et
+                  des entreprises.
                 </p>
               </div>
             </div>
@@ -373,13 +436,16 @@ export default function Home() {
                     <Lightbulb className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Innovation Technologique</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Innovation Technologique
+                    </h3>
                     <div className="w-12 h-0.5 bg-cyan-500 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Développement de l'innovation technologique pour créer des solutions
-                  durables et favoriser l'entrepreneuriat dans les secteurs d'avenir.
+                  Développement de l&apos;innovation technologique pour créer
+                  des solutions durables et favoriser l&apos;entrepreneuriat
+                  dans les secteurs d&apos;avenir.
                 </p>
               </div>
             </div>
@@ -393,13 +459,16 @@ export default function Home() {
                     <Earth className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Solutions pour l'Afrique</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Solutions pour l&apos;Afrique
+                    </h3>
                     <div className="w-12 h-0.5 bg-sky-500 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Recherche de solutions innovantes pour relever les défis majeurs auxquels
-                  est confronté l'Afrique et le Mali en particulier.
+                  Recherche de solutions innovantes pour relever les défis
+                  majeurs auxquels est confronté l&apos;Afrique et le Mali en
+                  particulier.
                 </p>
               </div>
             </div>
@@ -413,13 +482,16 @@ export default function Home() {
                     <FlaskConical className="text-white w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Sciences & Technologies</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      Sciences & Technologies
+                    </h3>
                     <div className="w-12 h-0.5 bg-indigo-500 mt-1"></div>
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Enseignement scientifique et technologique de pointe avec des laboratoires
-                  modernes et des équipements à la fine pointe de la technologie.
+                  Enseignement scientifique et technologique de pointe avec des
+                  laboratoires modernes et des équipements à la fine pointe de
+                  la technologie.
                 </p>
               </div>
             </div>
@@ -428,16 +500,19 @@ export default function Home() {
           {/* Call to Action */}
           <div className="text-center mt-16">
             <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Rejoignez Notre Mission</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Rejoignez Notre Mission
+              </h3>
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-                Participez à notre vision d'excellence académique et contribuez au développement
-                durable de l'Afrique à travers l'éducation et l'innovation.
+                Participez à notre vision d&apos;excellence académique et
+                contribuez au développement durable de l&apos;Afrique à travers
+                l&apos;éducation et l&apos;innovation.
               </p>
               <Link
                 href="/presentation"
                 className="inline-flex items-center bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold transition-colors"
               >
-                <span>En savoir plus sur l'UPCD</span>
+                <span>En savoir plus sur l&apos;UPCD</span>
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </div>
@@ -450,14 +525,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
-              Formations d'Excellence
+              Formations d&apos;Excellence
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Nos <span className="text-blue-600">Formations</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              L'UPCD propose des formations de qualité reconnues à travers ses deux facultés d'excellence
-              et son centre de recherche, avec des programmes adaptés aux besoins du marché du travail.
+              L&apos;UPCD propose des formations de qualité reconnues à travers
+              ses deux facultés d&apos;excellence et son centre de recherche,
+              avec des programmes adaptés aux besoins du marché du travail.
             </p>
           </div>
 
@@ -474,11 +550,12 @@ export default function Home() {
               <div className="mb-8">
                 <h3 className="text-3xl font-bold text-blue-900 mb-3">FDECO</h3>
                 <p className="text-lg text-blue-800 font-semibold mb-4">
-                  Faculté de Droit, d'Économie et de Communication
+                  Faculté de Droit, d&apos;Économie et de Communication
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Formation complète dans les domaines juridiques, économiques et de la communication
-                  avec 14 filières spécialisées pour répondre aux besoins du secteur tertiaire.
+                  Formation complète dans les domaines juridiques, économiques
+                  et de la communication avec 14 filières spécialisées pour
+                  répondre aux besoins du secteur tertiaire.
                 </p>
               </div>
 
@@ -486,31 +563,45 @@ export default function Home() {
                 <div className="space-y-3">
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Sciences Juridiques (SJ)</span>
+                    <span className="text-sm font-medium">
+                      Sciences Juridiques (SJ)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Sciences Politiques (SPo)</span>
+                    <span className="text-sm font-medium">
+                      Sciences Politiques (SPo)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Étude du Terrorisme (ETe)</span>
+                    <span className="text-sm font-medium">
+                      Étude du Terrorisme (ETe)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Sciences Économiques et Gestion (SEG)</span>
+                    <span className="text-sm font-medium">
+                      Sciences Économiques et Gestion (SEG)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Marketing-Management (MaM)</span>
+                    <span className="text-sm font-medium">
+                      Marketing-Management (MaM)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Journalisme Communication (JC)</span>
+                    <span className="text-sm font-medium">
+                      Journalisme Communication (JC)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Finances Comptabilité (FC)</span>
+                    <span className="text-sm font-medium">
+                      Finances Comptabilité (FC)
+                    </span>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -520,32 +611,47 @@ export default function Home() {
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Logistique, Transit, Transport (LTT)</span>
+                    <span className="text-sm font-medium">
+                      Logistique, Transit, Transport (LTT)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Gestion Ressources Humaines (GRH)</span>
+                    <span className="text-sm font-medium">
+                      Gestion Ressources Humaines (GRH)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Gestion Sportive (GS)</span>
+                    <span className="text-sm font-medium">
+                      Gestion Sportive (GS)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Commerce International (CI)</span>
+                    <span className="text-sm font-medium">
+                      Commerce International (CI)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Agro-business (Ab)</span>
+                    <span className="text-sm font-medium">
+                      Agro-business (Ab)
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-800">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                    <span className="text-sm font-medium">Gestion des Projets (GP)</span>
+                    <span className="text-sm font-medium">
+                      Gestion des Projets (GP)
+                    </span>
                   </div>
                 </div>
               </div>
 
-              <Link href="/formations" className="inline-flex items-center text-blue-700 font-semibold hover:text-blue-900 transition-colors">
+              <Link
+                href="/formations"
+                className="inline-flex items-center text-blue-700 font-semibold hover:text-blue-900 transition-colors"
+              >
                 <span>Découvrir FDECO</span>
                 <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -560,13 +666,16 @@ export default function Home() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-3xl font-bold text-indigo-900 mb-3">FAST</h3>
+                <h3 className="text-3xl font-bold text-indigo-900 mb-3">
+                  FAST
+                </h3>
                 <p className="text-lg text-indigo-800 font-semibold mb-4">
                   Faculté des Sciences et des Technologies
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Formation technique et scientifique de pointe pour les métiers d'ingénieur et de technicien
-                  avec 6 filières spécialisées dans les domaines technologiques d'avenir.
+                  Formation technique et scientifique de pointe pour les métiers
+                  d&apos;ingénieur et de technicien avec 6 filières spécialisées
+                  dans les domaines technologiques d&apos;avenir.
                 </p>
               </div>
 
@@ -575,18 +684,27 @@ export default function Home() {
                   <div className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Sciences Informatiques (MIAGE)</h4>
-                      <p className="text-sm text-gray-700">Génie Logiciel, Réseau Télécommunication, Administration base de données</p>
+                      <h4 className="font-semibold text-gray-900 mb-1">
+                        Sciences Informatiques (MIAGE)
+                      </h4>
+                      <p className="text-sm text-gray-700">
+                        Génie Logiciel, Réseau Télécommunication, Administration
+                        base de données
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center text-gray-800">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                  <span className="text-sm font-medium">Informatique de Gestion (IG)</span>
+                  <span className="text-sm font-medium">
+                    Informatique de Gestion (IG)
+                  </span>
                 </div>
                 <div className="flex items-center text-gray-800">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                  <span className="text-sm font-medium">Génie Industrie (GI)</span>
+                  <span className="text-sm font-medium">
+                    Génie Industrie (GI)
+                  </span>
                 </div>
                 <div className="flex items-center text-gray-800">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
@@ -594,7 +712,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-gray-800">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                  <span className="text-sm font-medium">Hydrologie (Hydro)</span>
+                  <span className="text-sm font-medium">
+                    Hydrologie (Hydro)
+                  </span>
                 </div>
                 <div className="flex items-center text-gray-800">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
@@ -602,7 +722,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="/formations" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-900 transition-colors">
+              <Link
+                href="/formations"
+                className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-900 transition-colors"
+              >
                 <span>Découvrir FAST</span>
                 <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -617,19 +740,31 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-3xl font-bold text-cyan-900 mb-2">CRFC</h3>
-                <p className="text-lg text-cyan-800 font-semibold">Centre de Recherche et de Formation Continue</p>
+                <p className="text-lg text-cyan-800 font-semibold">
+                  Centre de Recherche et de Formation Continue
+                </p>
               </div>
             </div>
             <p className="text-gray-800 text-lg leading-relaxed mb-6">
-              À travers ce Centre d'excellence, l'UPCD mène des études de recherche appliquée et offre aux professionnels
-              en activité des opportunités de formation continue, de perfectionnement et de reconversion professionnelle
-              adaptées aux évolutions du marché du travail.
+              À travers ce Centre d&apos;excellence, l&apos;UPCD mène des études
+              de recherche appliquée et offre aux professionnels en activité des
+              opportunités de formation continue, de perfectionnement et de
+              reconversion professionnelle adaptées aux évolutions du marché du
+              travail.
             </p>
             <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">Formation Continue</span>
-              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">Recherche Appliquée</span>
-              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">Perfectionnement</span>
-              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">Reconversion</span>
+              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">
+                Formation Continue
+              </span>
+              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">
+                Recherche Appliquée
+              </span>
+              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">
+                Perfectionnement
+              </span>
+              <span className="px-4 py-2 bg-cyan-200 text-cyan-800 rounded-full text-sm font-medium">
+                Reconversion
+              </span>
             </div>
           </div>
 
@@ -649,11 +784,15 @@ export default function Home() {
                   Parcours Académique
                 </div>
                 <h3 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                  Niveaux de <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Formation</span>
+                  Niveaux de{" "}
+                  <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    Formation
+                  </span>
                 </h3>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed">
-                  Trois niveaux de diplômes reconnus par l'État pour une progression académique complète
-                  et une insertion professionnelle garantie
+                  Trois niveaux de diplômes reconnus par l&apos;État pour une
+                  progression académique complète et une insertion
+                  professionnelle garantie
                 </p>
               </div>
 
@@ -671,12 +810,20 @@ export default function Home() {
                       <div className="text-7xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform">
                         DUT
                       </div>
-                      <h4 className="text-3xl font-bold mb-2 text-white">Bac+2</h4>
-                      <p className="text-blue-200 mb-6 text-lg">4 semestres après le Baccalauréat</p>
+                      <h4 className="text-3xl font-bold mb-2 text-white">
+                        Bac+2
+                      </h4>
+                      <p className="text-blue-200 mb-6 text-lg">
+                        4 semestres après le Baccalauréat
+                      </p>
 
                       <div className="bg-gradient-to-r from-blue-500/20 to-blue-700/20 rounded-xl p-4 mb-6 border border-blue-400/30">
-                        <p className="font-semibold text-blue-100 mb-2">Diplôme Universitaire de Technologie</p>
-                        <p className="text-sm text-blue-200">Formation technique et professionnelle</p>
+                        <p className="font-semibold text-blue-100 mb-2">
+                          Diplôme Universitaire de Technologie
+                        </p>
+                        <p className="text-sm text-blue-200">
+                          Formation technique et professionnelle
+                        </p>
                       </div>
 
                       <div className="space-y-3 mb-6">
@@ -686,7 +833,7 @@ export default function Home() {
                         </div>
                         <div className="flex items-center justify-center text-sm text-blue-100">
                           <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
-                          <span>Poursuite d'études en Licence</span>
+                          <span>Poursuite d&apos;études en Licence</span>
                         </div>
                         <div className="flex items-center justify-center text-sm text-blue-100">
                           <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
@@ -695,7 +842,9 @@ export default function Home() {
                       </div>
 
                       <div className="bg-blue-500/20 rounded-lg p-3">
-                        <div className="text-2xl font-bold text-orange-400">500K</div>
+                        <div className="text-2xl font-bold text-orange-400">
+                          500K
+                        </div>
                         <div className="text-xs text-blue-200">FCFA/an</div>
                       </div>
                     </div>
@@ -719,18 +868,26 @@ export default function Home() {
                       <div className="text-8xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform">
                         LIC
                       </div>
-                      <h4 className="text-3xl font-bold mb-2 text-white">Bac+3</h4>
-                      <p className="text-blue-200 mb-6 text-lg">6 semestres après le Baccalauréat</p>
+                      <h4 className="text-3xl font-bold mb-2 text-white">
+                        Bac+3
+                      </h4>
+                      <p className="text-blue-200 mb-6 text-lg">
+                        6 semestres après le Baccalauréat
+                      </p>
 
                       <div className="bg-gradient-to-r from-blue-500/20 to-blue-700/20 rounded-xl p-4 mb-6 border border-blue-400/30">
-                        <p className="font-semibold text-blue-100 mb-2">Licence Professionnelle</p>
-                        <p className="text-sm text-blue-200">Formation complète et spécialisée</p>
+                        <p className="font-semibold text-blue-100 mb-2">
+                          Licence Professionnelle
+                        </p>
+                        <p className="text-sm text-blue-200">
+                          Formation complète et spécialisée
+                        </p>
                       </div>
 
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center justify-center text-sm text-blue-100">
                           <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
-                          <span>85% d'insertion professionnelle</span>
+                          <span>85% d&apos;insertion professionnelle</span>
                         </div>
                         <div className="flex items-center justify-center text-sm text-blue-100">
                           <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
@@ -743,7 +900,9 @@ export default function Home() {
                       </div>
 
                       <div className="bg-blue-500/20 rounded-lg p-3">
-                        <div className="text-2xl font-bold text-blue-400">600K</div>
+                        <div className="text-2xl font-bold text-blue-400">
+                          600K
+                        </div>
                         <div className="text-xs text-blue-200">FCFA/an</div>
                       </div>
                     </div>
@@ -763,12 +922,20 @@ export default function Home() {
                       <div className="text-7xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform">
                         MST
                       </div>
-                      <h4 className="text-3xl font-bold mb-2 text-white">Bac+5</h4>
-                      <p className="text-purple-200 mb-6 text-lg">4 semestres après la Licence</p>
+                      <h4 className="text-3xl font-bold mb-2 text-white">
+                        Bac+5
+                      </h4>
+                      <p className="text-purple-200 mb-6 text-lg">
+                        4 semestres après la Licence
+                      </p>
 
                       <div className="bg-gradient-to-r from-purple-500/20 to-purple-700/20 rounded-xl p-4 mb-6 border border-purple-400/30">
-                        <p className="font-semibold text-purple-100 mb-2">Master Professionnel</p>
-                        <p className="text-sm text-purple-200">Formation d'expertise et de leadership</p>
+                        <p className="font-semibold text-purple-100 mb-2">
+                          Master Professionnel
+                        </p>
+                        <p className="text-sm text-purple-200">
+                          Formation d&apos;expertise et de leadership
+                        </p>
                       </div>
 
                       <div className="space-y-3 mb-6">
@@ -787,7 +954,9 @@ export default function Home() {
                       </div>
 
                       <div className="bg-purple-500/20 rounded-lg p-3">
-                        <div className="text-2xl font-bold text-purple-400">750K</div>
+                        <div className="text-2xl font-bold text-purple-400">
+                          750K
+                        </div>
                         <div className="text-xs text-purple-200">FCFA/an</div>
                       </div>
                     </div>
@@ -799,19 +968,28 @@ export default function Home() {
               <div className="relative">
                 <div className="flex items-center justify-center mb-8">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                      1
+                    </div>
                     <ArrowRight className="w-6 h-6 text-blue-400" />
-                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                      2
+                    </div>
                     <ArrowRight className="w-6 h-6 text-orange-400" />
-                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                      3
+                    </div>
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <h4 className="text-2xl font-bold text-white mb-4">Votre Parcours vers l'Excellence</h4>
+                  <h4 className="text-2xl font-bold text-white mb-4">
+                    Votre Parcours vers l&apos;Excellence
+                  </h4>
                   <p className="text-blue-200 max-w-2xl mx-auto mb-8">
-                    Un parcours progressif et structuré pour vous mener du DUT au Master,
-                    avec des possibilités d'insertion à chaque étape.
+                    Un parcours progressif et structuré pour vous mener du DUT
+                    au Master, avec des possibilités d&apos;insertion à chaque
+                    étape.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -837,7 +1015,10 @@ export default function Home() {
       </section>
 
       {/* Partenariats Section - Completely Redesigned */}
-      <section id="partenariats" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section
+        id="partenariats"
+        className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+      >
         {/* Background decorations */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-64 h-64 bg-blue-500 rounded-full blur-3xl"></div>
@@ -851,11 +1032,15 @@ export default function Home() {
               Réseau International
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              Nos <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Partenariats</span>
+              Nos{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                Partenariats
+              </span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Des collaborations stratégiques nationales et internationales pour enrichir votre parcours
-              académique et ouvrir de nouvelles opportunités professionnelles.
+              Des collaborations stratégiques nationales et internationales pour
+              enrichir votre parcours académique et ouvrir de nouvelles
+              opportunités professionnelles.
             </p>
           </div>
 
@@ -868,7 +1053,9 @@ export default function Home() {
                   <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
                   Partenariats Nationaux
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Soutien Local</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                  Soutien Local
+                </h3>
               </div>
 
               {/* FAFPA Card */}
@@ -880,22 +1067,29 @@ export default function Home() {
                       <Briefcase className="w-8 h-8 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-2xl font-bold text-gray-900 mb-2">FAFPA</h4>
+                      <h4 className="text-2xl font-bold text-gray-900 mb-2">
+                        FAFPA
+                      </h4>
                       <p className="text-green-700 font-semibold text-lg mb-4">
-                        Fonds d'Appui à la Formation Professionnelle et à l'Apprentissage
+                        Fonds d&apos;Appui à la Formation Professionnelle et à
+                        l&apos;Apprentissage
                       </p>
                     </div>
                   </div>
 
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    Partenariat privilégié permettant la prise en charge jusqu'à 100% des frais de formation
-                    pour les professionnels en activité souhaitant se perfectionner ou se reconvertir.
+                    Partenariat privilégié permettant la prise en charge
+                    jusqu&apos;à 100% des frais de formation pour les
+                    professionnels en activité souhaitant se perfectionner ou se
+                    reconvertir.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center text-gray-700">
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-sm">Prise en charge totale possible</span>
+                      <span className="text-sm">
+                        Prise en charge totale possible
+                      </span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
@@ -903,7 +1097,9 @@ export default function Home() {
                     </div>
                     <div className="flex items-center text-gray-700">
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-sm">Perfectionnement professionnel</span>
+                      <span className="text-sm">
+                        Perfectionnement professionnel
+                      </span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
@@ -913,8 +1109,12 @@ export default function Home() {
 
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4">
                     <div className="flex items-center justify-between">
-                      <span className="text-green-800 font-semibold">Taux de prise en charge</span>
-                      <span className="text-2xl font-bold text-green-600">100%</span>
+                      <span className="text-green-800 font-semibold">
+                        Taux de prise en charge
+                      </span>
+                      <span className="text-2xl font-bold text-green-600">
+                        100%
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -929,7 +1129,9 @@ export default function Home() {
                       <Users className="w-8 h-8 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-2xl font-bold text-gray-900 mb-2">DSSA</h4>
+                      <h4 className="text-2xl font-bold text-gray-900 mb-2">
+                        DSSA
+                      </h4>
                       <p className="text-blue-700 font-semibold text-lg mb-4">
                         Direction du Service Social des Armées
                       </p>
@@ -937,8 +1139,10 @@ export default function Home() {
                   </div>
 
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    Partenariat social permettant l'octroi de demi-bourses et bourses entières aux enfants
-                    de militaires, témoignant de notre engagement envers les familles au service de la nation.
+                    Partenariat social permettant l&apos;octroi de demi-bourses
+                    et bourses entières aux enfants de militaires, témoignant de
+                    notre engagement envers les familles au service de la
+                    nation.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -962,8 +1166,12 @@ export default function Home() {
 
                   <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
                     <div className="flex items-center justify-between">
-                      <span className="text-blue-800 font-semibold">Familles bénéficiaires</span>
-                      <span className="text-2xl font-bold text-blue-600">200+</span>
+                      <span className="text-blue-800 font-semibold">
+                        Familles bénéficiaires
+                      </span>
+                      <span className="text-2xl font-bold text-blue-600">
+                        200+
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -977,7 +1185,9 @@ export default function Home() {
                   <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>
                   Partenariats Internationaux
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Ouverture Mondiale</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                  Ouverture Mondiale
+                </h3>
               </div>
 
               {/* CEDIFA Card - Enhanced */}
@@ -989,15 +1199,22 @@ export default function Home() {
                       <span className="text-white text-2xl font-bold">🇪🇸</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-3xl font-bold text-gray-900 mb-2">CEDIFA</h4>
-                      <p className="text-indigo-700 font-semibold text-xl mb-2">Centre Espagnol - Séville</p>
-                      <p className="text-gray-600">Partenariat stratégique européen</p>
+                      <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                        CEDIFA
+                      </h4>
+                      <p className="text-indigo-700 font-semibold text-xl mb-2">
+                        Centre Espagnol - Séville
+                      </p>
+                      <p className="text-gray-600">
+                        Partenariat stratégique européen
+                      </p>
                     </div>
                   </div>
 
                   <p className="text-gray-800 text-lg leading-relaxed mb-8">
-                    Partenariat privilégié qui ouvre les portes de l'Europe à nos étudiants, professeurs
-                    et personnel administratif avec des opportunités uniques de formation internationale.
+                    Partenariat privilégié qui ouvre les portes de l&apos;Europe
+                    à nos étudiants, professeurs et personnel administratif avec
+                    des opportunités uniques de formation internationale.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -1045,12 +1262,17 @@ export default function Home() {
 
                   <div className="bg-gradient-to-r from-indigo-100 to-blue-100 border border-indigo-300 rounded-xl p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-indigo-800 font-bold text-lg">Étudiants en mobilité</span>
-                      <span className="text-3xl font-bold text-indigo-600">50+</span>
+                      <span className="text-indigo-800 font-bold text-lg">
+                        Étudiants en mobilité
+                      </span>
+                      <span className="text-3xl font-bold text-indigo-600">
+                        50+
+                      </span>
                     </div>
                     <p className="text-indigo-700 text-sm">
-                      Chaque année, nos étudiants bénéficient de cette opportunité unique d'enrichir
-                      leur parcours avec une expérience internationale valorisante.
+                      Chaque année, nos étudiants bénéficient de cette
+                      opportunité unique d&apos;enrichir leur parcours avec une
+                      expérience internationale valorisante.
                     </p>
                   </div>
                 </div>
@@ -1061,10 +1283,13 @@ export default function Home() {
           {/* Call to Action */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 text-white shadow-2xl">
-              <h3 className="text-3xl font-bold mb-6">Profitez de nos Partenariats</h3>
+              <h3 className="text-3xl font-bold mb-6">
+                Profitez de nos Partenariats
+              </h3>
               <p className="text-blue-100 text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-                Rejoignez l'UPCD et bénéficiez de nos collaborations nationales et internationales
-                pour enrichir votre parcours académique et professionnel.
+                Rejoignez l&apos;UPCD et bénéficiez de nos collaborations
+                nationales et internationales pour enrichir votre parcours
+                académique et professionnel.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -1101,11 +1326,15 @@ export default function Home() {
               Communauté Dynamique
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              Vie <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">Étudiante</span>
+              Vie{" "}
+              <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
+                Étudiante
+              </span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Découvrez l'ambiance dynamique de notre campus à travers les moments forts
-              de la vie étudiante, des activités académiques aux événements culturels.
+              Découvrez l&apos;ambiance dynamique de notre campus à travers les
+              moments forts de la vie étudiante, des activités académiques aux
+              événements culturels.
             </p>
           </div>
 
@@ -1122,8 +1351,12 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                <h3 className="text-lg font-bold mb-2">Activités Académiques</h3>
-                <p className="text-sm opacity-90">Projets étudiants et travaux pratiques</p>
+                <h3 className="text-lg font-bold mb-2">
+                  Activités Académiques
+                </h3>
+                <p className="text-sm opacity-90">
+                  Projets étudiants et travaux pratiques
+                </p>
               </div>
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <ArrowRight className="w-4 h-4 text-white" />
@@ -1161,7 +1394,9 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="text-lg font-bold mb-2">Soutenances</h3>
-                <p className="text-sm opacity-90">Présentations de projets de fin d'études</p>
+                <p className="text-sm opacity-90">
+                  Présentations de projets de fin d&apos;études
+                </p>
               </div>
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <ArrowRight className="w-4 h-4 text-white" />
@@ -1179,8 +1414,10 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                <h3 className="text-lg font-bold mb-2">Esprit d'Équipe</h3>
-                <p className="text-sm opacity-90">Cohésion et collaboration étudiante</p>
+                <h3 className="text-lg font-bold mb-2">Esprit d&apos;Équipe</h3>
+                <p className="text-sm opacity-90">
+                  Cohésion et collaboration étudiante
+                </p>
               </div>
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <ArrowRight className="w-4 h-4 text-white" />
@@ -1195,8 +1432,12 @@ export default function Home() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">15+</div>
-              <div className="text-lg font-semibold text-gray-800 mb-2">Clubs Étudiants</div>
-              <p className="text-gray-600 text-sm">Associations sportives, culturelles et académiques</p>
+              <div className="text-lg font-semibold text-gray-800 mb-2">
+                Clubs Étudiants
+              </div>
+              <p className="text-gray-600 text-sm">
+                Associations sportives, culturelles et académiques
+              </p>
             </div>
 
             <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -1204,8 +1445,12 @@ export default function Home() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
-              <div className="text-lg font-semibold text-gray-800 mb-2">Événements/An</div>
-              <p className="text-gray-600 text-sm">Conférences, séminaires et activités culturelles</p>
+              <div className="text-lg font-semibold text-gray-800 mb-2">
+                Événements/An
+              </div>
+              <p className="text-gray-600 text-sm">
+                Conférences, séminaires et activités culturelles
+              </p>
             </div>
 
             <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -1213,8 +1458,12 @@ export default function Home() {
                 <Globe className="w-8 h-8 text-white" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">100%</div>
-              <div className="text-lg font-semibold text-gray-800 mb-2">Engagement</div>
-              <p className="text-gray-600 text-sm">Tous nos étudiants participent à la vie du campus</p>
+              <div className="text-lg font-semibold text-gray-800 mb-2">
+                Engagement
+              </div>
+              <p className="text-gray-600 text-sm">
+                Tous nos étudiants participent à la vie du campus
+              </p>
             </div>
           </div>
 
@@ -1260,33 +1509,46 @@ export default function Home() {
               Prêt à Rejoindre
               <br />
               <span className="bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                l'UPCD ?
+                l&apos;UPCD ?
               </span>
             </h2>
 
             {/* Description */}
             <p className="text-2xl md:text-3xl mb-12 max-w-4xl mx-auto text-blue-200 leading-relaxed">
-              Donnez un nouvel élan à votre carrière avec nos formations d'excellence.
+              Donnez un nouvel élan à votre carrière avec nos formations
+              d&apos;excellence.
               <br />
-              <span className="text-orange-300 font-semibold">L'avenir commence aujourd'hui !</span>
+              <span className="text-orange-300 font-semibold">
+                L&apos;avenir commence aujourd&apos;hui !
+              </span>
             </p>
 
             {/* Stats Row */}
             <div className="grid md:grid-cols-4 gap-8 mb-16">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-orange-400 mb-2">2025</div>
+                <div className="text-3xl font-bold text-orange-400 mb-2">
+                  2025
+                </div>
                 <div className="text-white font-semibold">Rentrée Ouverte</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-orange-400 mb-2">85%</div>
-                <div className="text-white font-semibold">Taux d'Insertion</div>
+                <div className="text-3xl font-bold text-orange-400 mb-2">
+                  85%
+                </div>
+                <div className="text-white font-semibold">
+                  Taux d&apos;Insertion
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-orange-400 mb-2">20+</div>
+                <div className="text-3xl font-bold text-orange-400 mb-2">
+                  20+
+                </div>
                 <div className="text-white font-semibold">Filières</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-orange-400 mb-2">100%</div>
+                <div className="text-3xl font-bold text-orange-400 mb-2">
+                  100%
+                </div>
                 <div className="text-white font-semibold">Accompagnement</div>
               </div>
             </div>
@@ -1332,7 +1594,10 @@ export default function Home() {
               <div className="flex items-center space-x-2">
                 <div className="flex space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <StarsIcon key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <StarsIcon
+                      key={i}
+                      className="w-5 h-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <span className="font-semibold">Excellence reconnue</span>
@@ -1342,24 +1607,32 @@ export default function Home() {
 
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">Université agréée par l'État</span>
+                <span className="font-semibold">
+                  Université agréée par l&apos;État
+                </span>
               </div>
 
               <div className="h-4 w-px bg-blue-400 hidden md:block"></div>
 
               <div className="flex items-center space-x-2">
                 <Globe className="w-5 h-5 text-blue-400" />
-                <span className="font-semibold">Partenariats internationaux</span>
+                <span className="font-semibold">
+                  Partenariats internationaux
+                </span>
               </div>
             </div>
 
             {/* Final Message */}
             <div className="mt-16 bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
               <p className="text-xl text-blue-100 mb-4">
-                <span className="text-orange-300 font-bold">Plus de 1000 étudiants</span> nous font déjà confiance
+                <span className="text-orange-300 font-bold">
+                  Plus de 1000 étudiants
+                </span>{" "}
+                nous font déjà confiance
               </p>
               <p className="text-lg text-blue-200">
-                Rejoignez une communauté d'excellence et construisez votre avenir avec l'UPCD
+                Rejoignez une communauté d&apos;excellence et construisez votre
+                avenir avec l&apos;UPCD
               </p>
             </div>
           </div>

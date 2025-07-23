@@ -1,6 +1,18 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, CheckCircle, ArrowRight, Star, Award, Users, BookOpen, GraduationCap, Briefcase } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Send,
+  MessageSquare,
+  Award,
+  Users,
+  BookOpen,
+  GraduationCap,
+  Briefcase,
+} from "lucide-react";
 
 export default function Contact() {
   return (
@@ -26,7 +38,7 @@ export default function Contact() {
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`
+                animationDuration: `${3 + Math.random() * 4}s`,
               }}
             ></div>
           ))}
@@ -52,8 +64,8 @@ export default function Contact() {
               </h1>
 
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-                Notre équipe est là pour répondre à toutes vos questions sur nos formations,
-                admissions et opportunités de bourses.
+                Notre équipe est là pour répondre à toutes vos questions sur nos
+                formations, admissions et opportunités de bourses.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6">
@@ -73,23 +85,33 @@ export default function Contact() {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
                 <div className="text-4xl font-bold text-blue-400 mb-2">24h</div>
                 <div className="text-white font-semibold">Réponse Rapide</div>
-                <div className="text-gray-300 text-sm mt-2">Délai moyen de réponse</div>
+                <div className="text-gray-300 text-sm mt-2">
+                  Délai moyen de réponse
+                </div>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-500 mb-2">100%</div>
+                <div className="text-4xl font-bold text-blue-500 mb-2">
+                  100%
+                </div>
                 <div className="text-white font-semibold">Satisfaction</div>
-                <div className="text-gray-300 text-sm mt-2">Taux de satisfaction</div>
+                <div className="text-gray-300 text-sm mt-2">
+                  Taux de satisfaction
+                </div>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
                 <div className="text-4xl font-bold text-blue-300 mb-2">5</div>
                 <div className="text-white font-semibold">Services</div>
-                <div className="text-gray-300 text-sm mt-2">Domaines d'expertise</div>
+                <div className="text-gray-300 text-sm mt-2">
+                  Domaines d&apos;expertise
+                </div>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-600 mb-2">6j/7</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">
+                  6j/7
+                </div>
                 <div className="text-white font-semibold">Disponibilité</div>
                 <div className="text-gray-300 text-sm mt-2">Lun-Sam ouvert</div>
               </div>
@@ -111,7 +133,9 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-8">Informations de Contact</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                Informations de Contact
+              </h2>
 
               <div className="space-y-8">
                 <div className="group flex items-start space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
@@ -119,10 +143,13 @@ export default function Contact() {
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Adresse</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Adresse
+                    </h3>
                     <p className="text-gray-700 font-medium leading-relaxed">
-                      Centre-ville de Kati<br />
-                      Mali, Afrique de l'Ouest
+                      Centre-ville de Kati
+                      <br />
+                      Mali, Afrique de l&apos;Ouest
                     </p>
                   </div>
                 </div>
@@ -132,9 +159,12 @@ export default function Contact() {
                     <Phone className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Téléphone</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Téléphone
+                    </h3>
                     <p className="text-gray-700 font-medium leading-relaxed">
-                      +223 XX XX XX XX<br />
+                      +223 XX XX XX XX
+                      <br />
                       +223 XX XX XX XX (Fax)
                     </p>
                   </div>
@@ -145,9 +175,12 @@ export default function Contact() {
                     <Mail className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Email</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Email
+                    </h3>
                     <p className="text-gray-700 font-medium leading-relaxed">
-                      contact@upcd.edu.ml<br />
+                      contact@upcd.edu.ml
+                      <br />
                       admission@upcd.edu.ml
                     </p>
                   </div>
@@ -158,10 +191,14 @@ export default function Contact() {
                     <Clock className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Horaires d'ouverture</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Horaires d&apos;ouverture
+                    </h3>
                     <p className="text-gray-700 font-medium leading-relaxed">
-                      Lundi - Vendredi: 8h00 - 17h00<br />
-                      Samedi: 8h00 - 12h00<br />
+                      Lundi - Vendredi: 8h00 - 17h00
+                      <br />
+                      Samedi: 8h00 - 12h00
+                      <br />
                       Dimanche: Fermé
                     </p>
                   </div>
@@ -170,43 +207,61 @@ export default function Contact() {
 
               {/* Services */}
               <div className="mt-16">
-                <h3 className="text-3xl font-bold text-gray-900 mb-8">Nos Services</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-8">
+                  Nos Services
+                </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <GraduationCap className="w-6 h-6 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold text-gray-900">Admission</h4>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Admission
+                      </h4>
                     </div>
-                    <p className="text-gray-700 font-medium">Informations sur les inscriptions et les programmes</p>
+                    <p className="text-gray-700 font-medium">
+                      Informations sur les inscriptions et les programmes
+                    </p>
                   </div>
                   <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <Users className="w-6 h-6 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold text-gray-900">Orientation</h4>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Orientation
+                      </h4>
                     </div>
-                    <p className="text-gray-700 font-medium">Conseil et accompagnement dans le choix de formation</p>
+                    <p className="text-gray-700 font-medium">
+                      Conseil et accompagnement dans le choix de formation
+                    </p>
                   </div>
                   <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <Award className="w-6 h-6 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold text-gray-900">Bourses</h4>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Bourses
+                      </h4>
                     </div>
-                    <p className="text-gray-700 font-medium">Informations sur les aides financières disponibles</p>
+                    <p className="text-gray-700 font-medium">
+                      Informations sur les aides financières disponibles
+                    </p>
                   </div>
                   <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <Briefcase className="w-6 h-6 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold text-gray-900">Stages</h4>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Stages
+                      </h4>
                     </div>
-                    <p className="text-gray-700 font-medium">Opportunités de stages nationaux et internationaux</p>
+                    <p className="text-gray-700 font-medium">
+                      Opportunités de stages nationaux et internationaux
+                    </p>
                   </div>
                 </div>
               </div>
@@ -214,7 +269,9 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-8">Envoyez-nous un Message</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                Envoyez-nous un Message
+              </h2>
 
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-blue-200 shadow-xl">
                 <form className="space-y-8">
@@ -275,9 +332,15 @@ export default function Contact() {
                       className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
                     >
                       <option value="">Sélectionnez un sujet</option>
-                      <option value="admission">Demande d'admission</option>
-                      <option value="formations">Informations sur les formations</option>
-                      <option value="bourses">Bourses et aides financières</option>
+                      <option value="admission">
+                        Demande d&apos;admission
+                      </option>
+                      <option value="formations">
+                        Informations sur les formations
+                      </option>
+                      <option value="bourses">
+                        Bourses et aides financières
+                      </option>
                       <option value="stages">Opportunités de stages</option>
                       <option value="partenariats">Partenariats</option>
                       <option value="autre">Autre</option>
@@ -303,9 +366,13 @@ export default function Contact() {
                       required
                       className="mt-1 mr-4 w-5 h-5 text-blue-600 border-2 border-blue-300 rounded focus:ring-blue-500"
                     />
-                    <label htmlFor="consent" className="text-gray-800 font-medium leading-relaxed">
-                      J'accepte que mes données personnelles soient utilisées pour traiter ma demande
-                      conformément à la politique de confidentialité de l'UPCD. *
+                    <label
+                      htmlFor="consent"
+                      className="text-gray-800 font-medium leading-relaxed"
+                    >
+                      J&apos;accepte que mes données personnelles soient
+                      utilisées pour traiter ma demande conformément à la
+                      politique de confidentialité de l&apos;UPCD. *
                     </label>
                   </div>
 
@@ -331,7 +398,9 @@ export default function Contact() {
               <MessageSquare className="w-4 h-4 mr-2" />
               Questions Fréquentes
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Questions Fréquentes</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+              Questions Fréquentes
+            </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Trouvez rapidement les réponses à vos questions les plus courantes
             </p>
@@ -345,12 +414,14 @@ export default function Contact() {
                     <GraduationCap className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">
-                    Quelles sont les conditions d'admission à l'UPCD ?
+                    Quelles sont les conditions d&apos;admission à l&apos;UPCD ?
                   </h3>
                 </div>
                 <p className="text-gray-700 font-medium leading-relaxed ml-16">
-                  L'admission à l'UPCD se fait sur dossier. Pour le DUT, il faut être titulaire du baccalauréat.
-                  Pour la Licence, il faut avoir un DUT ou équivalent. Pour le Master, une Licence est requise.
+                  L&apos;admission à l&apos;UPCD se fait sur dossier. Pour le
+                  DUT, il faut être titulaire du baccalauréat. Pour la Licence,
+                  il faut avoir un DUT ou équivalent. Pour le Master, une
+                  Licence est requise.
                 </p>
               </div>
             </div>
@@ -366,8 +437,10 @@ export default function Contact() {
                   </h3>
                 </div>
                 <p className="text-gray-700 font-medium leading-relaxed ml-16">
-                  Pour les bourses FAFPA, vous devez être un professionnel en activité. Pour les bourses DSSA,
-                  vous devez être enfant de militaire. Contactez notre service d'admission pour plus de détails.
+                  Pour les bourses FAFPA, vous devez être un professionnel en
+                  activité. Pour les bourses DSSA, vous devez être enfant de
+                  militaire. Contactez notre service d&apos;admission pour plus
+                  de détails.
                 </p>
               </div>
             </div>
@@ -383,8 +456,9 @@ export default function Contact() {
                   </h3>
                 </div>
                 <p className="text-gray-700 font-medium leading-relaxed ml-16">
-                  Les stages en Espagne avec CEDIFA sont optionnels mais fortement recommandés.
-                  Ils offrent une expérience internationale précieuse pour votre parcours professionnel.
+                  Les stages en Espagne avec CEDIFA sont optionnels mais
+                  fortement recommandés. Ils offrent une expérience
+                  internationale précieuse pour votre parcours professionnel.
                 </p>
               </div>
             </div>
@@ -396,12 +470,14 @@ export default function Contact() {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">
-                    Quand commencent les inscriptions pour la prochaine rentrée ?
+                    Quand commencent les inscriptions pour la prochaine rentrée
+                    ?
                   </h3>
                 </div>
                 <p className="text-gray-700 font-medium leading-relaxed ml-16">
-                  Les inscriptions commencent généralement en juin pour la rentrée d'octobre.
-                  Nous vous recommandons de vous inscrire tôt pour garantir votre place.
+                  Les inscriptions commencent généralement en juin pour la
+                  rentrée d&apos;octobre. Nous vous recommandons de vous
+                  inscrire tôt pour garantir votre place.
                 </p>
               </div>
             </div>
@@ -413,12 +489,14 @@ export default function Contact() {
                     <BookOpen className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">
-                    L'UPCD propose-t-elle des formations à distance ?
+                    L&apos;UPCD propose-t-elle des formations à distance ?
                   </h3>
                 </div>
                 <p className="text-gray-700 font-medium leading-relaxed ml-16">
-                  Actuellement, nos formations sont principalement en présentiel sur notre campus de Kati.
-                  Cependant, nous développons des modules de formation continue qui peuvent inclure du distanciel.
+                  Actuellement, nos formations sont principalement en présentiel
+                  sur notre campus de Kati. Cependant, nous développons des
+                  modules de formation continue qui peuvent inclure du
+                  distanciel.
                 </p>
               </div>
             </div>
@@ -434,9 +512,12 @@ export default function Contact() {
               <MapPin className="w-4 h-4 mr-2" />
               Notre Localisation
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Notre Localisation</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+              Notre Localisation
+            </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Situé au centre-ville de Kati, notre campus est facilement accessible
+              Situé au centre-ville de Kati, notre campus est facilement
+              accessible
             </p>
           </div>
 
@@ -447,8 +528,12 @@ export default function Contact() {
                 <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl">
                   <MapPin className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Carte interactive à venir</h3>
-                <p className="text-lg text-gray-700 font-medium">Centre-ville de Kati, Mali</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Carte interactive à venir
+                </h3>
+                <p className="text-lg text-gray-700 font-medium">
+                  Centre-ville de Kati, Mali
+                </p>
                 <div className="mt-6 inline-flex items-center bg-white/80 backdrop-blur-sm text-blue-800 rounded-full px-6 py-3 font-semibold border border-blue-200">
                   <Clock className="w-4 h-4 mr-2" />
                   Accessible 24h/24
