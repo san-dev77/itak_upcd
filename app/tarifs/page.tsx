@@ -18,53 +18,38 @@ export default function Tarifs() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+      <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        {/* Floating particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-white rounded-full opacity-20 animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          ))}
-        </div>
-        <div className="container mx-auto px-4 relative z-10 min-h-screen flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center py-12 sm:py-16 md:py-20">
           <div className="text-center max-w-4xl mx-auto">
-            <span className="inline-block px-4 py-2 bg-blue-500 bg-opacity-20 rounded-full text-blue-300 text-sm font-semibold mb-6">
+            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-blue-500 bg-opacity-20 rounded-full text-blue-300 text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
               Tarifs Transparents
             </span>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 px-2">
               Investissez dans votre{" "}
               <span className="text-blue-400">Avenir</span>
             </h1>
-            <p className="text-xl text-blue-200 leading-relaxed mb-8">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-200 leading-relaxed mb-6 sm:mb-8 px-2">
               Des tarifs accessibles avec des possibilités de financement et de
               bourses pour rendre l&apos;excellence académique accessible à tous
               les étudiants motivés.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 flex items-center">
-                <CreditCard className="w-5 h-5 text-blue-400 mr-2" />
-                <span className="text-blue-400 font-semibold">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-4 py-2 sm:px-6 sm:py-3 flex items-center">
+                <CreditCard className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mr-2" />
+                <span className="text-xs sm:text-sm md:text-base text-blue-400 font-semibold">
                   Paiement échelonné disponible
                 </span>
               </div>
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 flex items-center">
-                <GraduationCap className="w-5 h-5 text-blue-400 mr-2" />
-                <span className="text-blue-400 font-semibold">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-4 py-2 sm:px-6 sm:py-3 flex items-center">
+                <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mr-2" />
+                <span className="text-xs sm:text-sm md:text-base text-blue-400 font-semibold">
                   Bourses FAFPA & DSSA
                 </span>
               </div>
@@ -74,76 +59,76 @@ export default function Tarifs() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
               Choisissez votre Parcours
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
               Trois niveaux de formation avec des tarifs adaptés à chaque étape
               de votre parcours académique
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
             {/* DUT Card */}
-            <div className="group relative bg-gradient-to-br from-white via-blue-50 to-blue-100 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border-2 border-blue-200 hover:border-blue-300 overflow-hidden transform hover:-translate-y-2">
-              <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"></div>
+            <div className="group relative bg-gradient-to-br from-white via-blue-50 to-blue-100 rounded-xl sm:rounded-2xl md:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-blue-200 hover:border-blue-300 overflow-hidden transform hover:-translate-y-2">
+              <div className="absolute top-0 left-0 right-0 h-2 sm:h-3 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50 opacity-50"></div>
-              <div className="relative p-8">
-                <div className="text-center mb-8">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-blue-700 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-2xl font-bold">DUT</span>
+              <div className="relative p-4 sm:p-6 md:p-8">
+                <div className="text-center mb-6 sm:mb-8">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl sm:rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-white text-lg sm:text-xl md:text-2xl font-bold">DUT</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">
                     Diplôme Universitaire de Technologie
                   </h3>
-                  <p className="text-blue-600 font-medium">
+                  <p className="text-sm sm:text-base text-blue-600 font-medium">
                     Bac+2 • 4 semestres
                   </p>
                 </div>
 
-                <div className="text-center mb-8 bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-blue-200 shadow-inner">
-                  <div className="text-5xl font-bold text-blue-900 mb-2">
+                <div className="text-center mb-6 sm:mb-8 bg-white/70 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-blue-200 shadow-inner">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-1 sm:mb-2">
                     500,000
-                    <span className="text-lg font-normal text-blue-600">
+                    <span className="text-sm sm:text-base md:text-lg font-normal text-blue-600">
                       FCFA
                     </span>
                   </div>
-                  <p className="text-blue-700 font-medium">
+                  <p className="text-xs sm:text-sm md:text-base text-blue-700 font-medium">
                     par année académique
                   </p>
                 </div>
 
-                <div className="space-y-3 mb-8">
-                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
+                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-blue-100 shadow-sm">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">
                       Cours magistraux et TD
                     </span>
                   </div>
-                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
+                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-blue-100 shadow-sm">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">
                       Accès bibliothèque numérique
                     </span>
                   </div>
-                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
+                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-blue-100 shadow-sm">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">
                       Laboratoires informatiques
                     </span>
                   </div>
-                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
+                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-blue-100 shadow-sm">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">
                       Encadrement pédagogique
                     </span>
                   </div>
-                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
+                  <div className="flex items-center bg-white/60 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-blue-100 shadow-sm">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">
                       Stages en entreprise
                     </span>
                   </div>

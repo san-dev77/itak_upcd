@@ -26,40 +26,24 @@ export default function Admission() {
       <Header />
 
       {/* Hero Section - Completely Redesigned */}
-      <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+      <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        {/* Floating particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-white rounded-full opacity-20 animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          ))}
-        </div>
-
-        <div className="relative container mx-auto px-4 min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative container mx-auto px-4 sm:px-6 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center w-full">
             {/* Left Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-blue-300 rounded-full px-6 py-3 text-sm font-semibold border border-white/20">
-                <GraduationCap className="w-4 h-4 mr-2" />
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-blue-300 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold border border-white/20">
+                <GraduationCap className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Admission Ouverte 2025
               </div>
 
-              <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
                   Rejoignez
                 </span>
@@ -68,98 +52,105 @@ export default function Admission() {
                   l&apos;UPCD
                 </span>
                 <br />
-                <span className="text-4xl md:text-5xl text-gray-300">
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300">
                   Construisez votre Avenir
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-2xl">
                 Un processus d&apos;admission simple et transparent pour
                 intégrer une formation d&apos;excellence et donner un nouvel
                 élan à votre carrière.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6">
-                <button className="group bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
-                  <Download className="w-5 h-5 mr-2" />
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
+                <button className="group bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
+                  <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Télécharger le Dossier
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
-                  <Phone className="w-5 h-5 mr-2" />
+                <button className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 flex items-center justify-center">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Prendre Rendez-vous
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </div>
 
             {/* Right Content - Admission Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-400 mb-2">48h</div>
-                <div className="text-white font-semibold">Réponse Rapide</div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-400 mb-1 sm:mb-2">
+                  48h
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Réponse Rapide
+                </div>
                 <div className="text-gray-300 text-sm mt-2">
                   Traitement des dossiers
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-500 mb-2">95%</div>
-                <div className="text-white font-semibold">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-1 sm:mb-2">
+                  95%
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
                   Taux d&apos;Insertion
                 </div>
-                <div className="text-gray-300 text-sm mt-2">
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   Emploi après diplôme
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-300 mb-2">3</div>
-                <div className="text-white font-semibold">Niveaux</div>
-                <div className="text-gray-300 text-sm mt-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-300 mb-1 sm:mb-2">
+                  3
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Niveaux
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   DUT, Licence, Master
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-600 mb-2">60%</div>
-                <div className="text-white font-semibold">Bourses</div>
-                <div className="text-gray-300 text-sm mt-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
+                  60%
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Bourses
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   Étudiants aidés
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
       </section>
 
       {/* Process d&apos;Admission */}
-      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
-              <Target className="w-4 h-4 mr-2" />
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
+              <Target className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Processus Simplifié
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 leading-tight px-2">
               Processus d&apos;
               <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                 Admission
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed px-2">
               Un processus simple et transparent pour intégrer l&apos;UPCD en
               seulement 4 étapes
             </p>
@@ -246,13 +237,13 @@ export default function Admission() {
       </section>
 
       {/* Conditions d&apos;Admission */}
-      <section className="py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-blue-600 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <GraduationCap className="w-4 h-4 mr-2" />
@@ -429,13 +420,13 @@ export default function Admission() {
       </section>
 
       {/* Pièces à Fournir */}
-      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <FileText className="w-4 h-4 mr-2" />
@@ -579,14 +570,14 @@ export default function Admission() {
       </section>
 
       {/* Frais de Scolarité */}
-      <section className="py-32 bg-blue-900 text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-blue-300 rounded-full px-6 py-3 text-sm font-semibold mb-6 border border-white/20">
               <Award className="w-4 h-4 mr-2" />
@@ -711,13 +702,13 @@ export default function Admission() {
       </section>
 
       {/* Calendrier */}
-      <section className="py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-blue-600 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <Calendar className="w-4 h-4 mr-2" />
@@ -845,7 +836,7 @@ export default function Admission() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-32 bg-gradient-to-r from-blue-500 to-blue-700 text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-r from-blue-500 to-blue-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-2xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-24 h-24 bg-white rounded-full blur-2xl animate-pulse delay-1000"></div>

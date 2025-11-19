@@ -28,40 +28,24 @@ export default function VieEtudiante() {
       <Header />
 
       {/* Hero Section - Completely Redesigned */}
-      <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-emerald-900 text-white overflow-hidden">
+      <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-emerald-900 text-white overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-green-500 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-green-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-blue-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-purple-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        {/* Floating particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-white rounded-full opacity-20 animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          ))}
-        </div>
-
-        <div className="relative container mx-auto px-4 min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative container mx-auto px-4 sm:px-6 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center w-full">
             {/* Left Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-green-300 rounded-full px-6 py-3 text-sm font-semibold border border-white/20">
-                <Heart className="w-4 h-4 mr-2" />
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-green-300 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold border border-white/20">
+                <Heart className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Vie Étudiante Dynamique depuis 2016
               </div>
 
-              <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-white via-green-100 to-green-200 bg-clip-text text-transparent">
                   Vie
                 </span>
@@ -70,12 +54,12 @@ export default function VieEtudiante() {
                   Étudiante
                 </span>
                 <br />
-                <span className="text-4xl md:text-5xl text-gray-300">
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300">
                   Épanouissante
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-2xl">
                 Découvrez la richesse de la vie universitaire à l&apos;UPCD :
                 communauté dynamique, activités variées et accompagnement
                 personnalisé pour votre épanouissement.
@@ -135,13 +119,6 @@ export default function VieEtudiante() {
                 <div className="text-gray-300 text-sm mt-2">Vie étudiante</div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>

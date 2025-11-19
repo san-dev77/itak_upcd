@@ -62,16 +62,16 @@ export default function Formations() {
           ))}
         </div>
 
-        <div className="relative container mx-auto px-4 min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative container mx-auto px-4 sm:px-6 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center w-full">
             {/* Left Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-orange-300 rounded-full px-6 py-3 text-sm font-semibold border border-white/20">
-                <GraduationCap className="w-4 h-4 mr-2" />
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-orange-300 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold border border-white/20">
+                <GraduationCap className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Excellence Académique depuis 2016
               </div>
 
-              <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-white via-orange-100 to-orange-200 bg-clip-text text-transparent">
                   Nos
                 </span>
@@ -80,21 +80,21 @@ export default function Formations() {
                   Formations
                 </span>
                 <br />
-                <span className="text-4xl md:text-5xl text-gray-300">
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300">
                   d&apos;Excellence
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-2xl">
                 Découvrez nos programmes académiques innovants conçus pour
                 former les leaders de demain dans un environnement
                 d&apos;apprentissage moderne et international.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
                 <Link
                   href="/admission"
-                  className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
+                  className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
                 >
                   Candidater Maintenant
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -147,69 +147,64 @@ export default function Formations() {
             </div>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
       </section>
 
       {/* Structures de Formation - Redesigned */}
-      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-orange-100 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
-              <BookOpen className="w-4 h-4 mr-2" />
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-orange-100 text-blue-800 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
+              <BookOpen className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Trois Structures d&apos;Excellence
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 leading-tight px-2">
               Nos{" "}
               <span className="bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">
                 Structures
               </span>{" "}
               de Formation
             </h2>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed px-2">
               L&apos;UPCD propose des formations de qualité à travers ses deux
               facultés d&apos;excellence et son centre de recherche innovant
             </p>
           </div>
 
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16">
               {/* FDECO */}
-              <div className="group bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 relative">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+              <div className="group bg-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative">
+                <div className="absolute top-0 right-0 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full -translate-y-12 translate-x-12 sm:-translate-y-14 sm:translate-x-14 md:-translate-y-16 md:translate-x-16 opacity-50"></div>
 
-                <div className="bg-gradient-to-br from-blue-900 to-blue-800 text-white p-8 text-center relative z-10">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Scale className="w-8 h-8 text-white" />
+                <div className="bg-gradient-to-br from-blue-900 to-blue-800 text-white p-4 sm:p-6 md:p-8 text-center relative z-10">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                    <Scale className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold mb-2">FDECO</h3>
-                  <p className="text-blue-200 text-lg">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 sm:mb-2">
+                    FDECO
+                  </h3>
+                  <p className="text-xs sm:text-sm md:text-base lg:text-lg text-blue-200">
                     Faculté de Droit, d&apos;Économie et de Communication
                   </p>
                 </div>
 
-                <div className="p-8 relative z-10">
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                <div className="p-4 sm:p-6 md:p-8 relative z-10">
+                  <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                     Formation complète et moderne dans les domaines juridiques,
                     économiques et de la communication avec une approche
                     pratique et professionnalisante.
                   </p>
 
-                  <div className="space-y-4 mb-6">
+                  <div className="space-y-2 sm:space-y-3 md:space-y-4 mb-4 sm:mb-6">
                     <div className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-blue-600 mr-3" />
-                      <span className="text-gray-700">
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base text-gray-700">
                         Formation théorique et pratique
                       </span>
                     </div>
@@ -386,14 +381,14 @@ export default function Formations() {
       </section>
 
       {/* FDECO Détails - Redesigned */}
-      <section className="py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-indigo-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <Scale className="w-4 h-4 mr-2" />
@@ -514,7 +509,7 @@ export default function Formations() {
                   color: "green",
                   description: "Management du sport et événementiel",
                   image:
-                    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                    "https://i.pinimg.com/1200x/39/4a/85/394a8514c21be4c0fc80e3d2a9879019.jpg",
                 },
                 {
                   code: "CI",
@@ -523,7 +518,7 @@ export default function Formations() {
                   color: "indigo",
                   description: "Commerce mondial et relations d&apos;affaires",
                   image:
-                    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                    "https://i.pinimg.com/736x/60/22/b8/6022b875afd5bef3a825dd74e42877fd.jpg",
                 },
                 {
                   code: "Ab",
@@ -701,14 +696,14 @@ export default function Formations() {
       </section>
 
       {/* FAST Détails - Redesigned */}
-      <section className="py-32 bg-gradient-to-br from-green-50 to-teal-50 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-green-50 to-teal-50 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 right-20 w-80 h-80 bg-green-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-64 h-64 bg-teal-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-gradient-to-r from-green-100 to-teal-100 text-green-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <FlaskConical className="w-4 h-4 mr-2" />
@@ -963,7 +958,7 @@ export default function Formations() {
       </section>
 
       {/* Niveaux de Formation - Redesigned */}
-      <section className="py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
@@ -971,7 +966,7 @@ export default function Formations() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-orange-300 rounded-full px-6 py-3 text-sm font-semibold mb-6 border border-white/20">
               <GraduationCap className="w-4 h-4 mr-2" />
@@ -1176,7 +1171,7 @@ export default function Formations() {
       </section>
 
       {/* CTA Section - Redesigned */}
-      <section className="py-32 bg-gradient-to-br from-slate-900 via-orange-900 to-red-900 text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-slate-900 via-orange-900 to-red-900 text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
@@ -1200,7 +1195,7 @@ export default function Formations() {
           ))}
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-orange-300 rounded-full px-6 py-3 text-sm font-semibold mb-8 border border-white/20">

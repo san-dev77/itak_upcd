@@ -20,40 +20,24 @@ export default function Contact() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+      <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
-        {/* Floating particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-white rounded-full opacity-20 animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          ))}
-        </div>
-
-        <div className="relative container mx-auto px-4 min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative container mx-auto px-4 sm:px-6 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center w-full">
             {/* Left Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-blue-300 rounded-full px-6 py-3 text-sm font-semibold border border-white/20">
-                <MessageSquare className="w-4 h-4 mr-2" />
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm text-blue-300 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold border border-white/20">
+                <MessageSquare className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Contact & Support depuis 2016
               </div>
 
-              <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
                   Contactez
                 </span>
@@ -63,90 +47,99 @@ export default function Contact() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-2xl">
                 Notre équipe est là pour répondre à toutes vos questions sur nos
                 formations, admissions et opportunités de bourses.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6">
-                <div className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
-                  <Phone className="w-5 h-5 mr-2" />
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
+                <div className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 flex items-center justify-center">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   +223 XX XX XX XX
                 </div>
-                <div className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
-                  <Mail className="w-5 h-5 mr-2" />
-                  contact@upcd.edu.ml
+                <div className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 flex items-center justify-center">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  <span className="break-all sm:break-normal">
+                    univ.upcd@gmail.com
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Right Content - Quick Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-400 mb-2">24h</div>
-                <div className="text-white font-semibold">Réponse Rapide</div>
-                <div className="text-gray-300 text-sm mt-2">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-400 mb-1 sm:mb-2">
+                  24h
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Réponse Rapide
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   Délai moyen de réponse
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-500 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-1 sm:mb-2">
                   100%
                 </div>
-                <div className="text-white font-semibold">Satisfaction</div>
-                <div className="text-gray-300 text-sm mt-2">
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Satisfaction
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   Taux de satisfaction
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-300 mb-2">5</div>
-                <div className="text-white font-semibold">Services</div>
-                <div className="text-gray-300 text-sm mt-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-300 mb-1 sm:mb-2">
+                  5
+                </div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Services
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
                   Domaines d&apos;expertise
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <div className="text-4xl font-bold text-blue-600 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
                   6j/7
                 </div>
-                <div className="text-white font-semibold">Disponibilité</div>
-                <div className="text-gray-300 text-sm mt-2">Lun-Sam ouvert</div>
+                <div className="text-xs sm:text-sm md:text-base text-white font-semibold">
+                  Disponibilité
+                </div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
+                  Lun-Sam ouvert
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
 
       {/* Contact Info & Form */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8">
                 Informations de Contact
               </h2>
 
-              <div className="space-y-8">
-                <div className="group flex items-start space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <MapPin className="w-8 h-8 text-white" />
+              <div className="space-y-4 sm:space-y-6 md:space-y-8">
+                <div className="group flex items-start space-x-4 sm:space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <MapPin className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                       Adresse
                     </h3>
-                    <p className="text-gray-700 font-medium leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
                       Centre-ville de Kati
                       <br />
                       Mali, Afrique de l&apos;Ouest
@@ -154,15 +147,15 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="group flex items-start space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Phone className="w-8 h-8 text-white" />
+                <div className="group flex items-start space-x-4 sm:space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Phone className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                       Téléphone
                     </h3>
-                    <p className="text-gray-700 font-medium leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
                       +223 XX XX XX XX
                       <br />
                       +223 XX XX XX XX (Fax)
@@ -170,18 +163,16 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="group flex items-start space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Mail className="w-8 h-8 text-white" />
+                <div className="group flex items-start space-x-4 sm:space-x-6 bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Mail className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                       Email
                     </h3>
-                    <p className="text-gray-700 font-medium leading-relaxed">
-                      contact@upcd.edu.ml
-                      <br />
-                      admission@upcd.edu.ml
+                    <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
+                      univ.upcd@gmail.com
                     </p>
                   </div>
                 </div>
@@ -269,67 +260,67 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8">
                 Envoyez-nous un Message
               </h2>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-blue-200 shadow-xl">
-                <form className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 border-2 border-blue-200 shadow-xl">
+                <form className="space-y-4 sm:space-y-6 md:space-y-8">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-lg font-bold text-gray-900 mb-3">
+                      <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                         Prénom *
                       </label>
                       <input
                         type="text"
                         required
-                        className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
+                        className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900 placeholder:text-gray-500"
                         placeholder="Votre prénom"
                       />
                     </div>
                     <div>
-                      <label className="block text-lg font-bold text-gray-900 mb-3">
+                      <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                         Nom *
                       </label>
                       <input
                         type="text"
                         required
-                        className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
+                        className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900 placeholder:text-gray-500"
                         placeholder="Votre nom"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-lg font-bold text-gray-900 mb-3">
+                    <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                       Email *
                     </label>
                     <input
                       type="email"
                       required
-                      className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
+                      className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900 placeholder:text-gray-500"
                       placeholder="votre.email@exemple.com"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-lg font-bold text-gray-900 mb-3">
+                    <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                       Téléphone
                     </label>
                     <input
                       type="tel"
-                      className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
+                      className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900 placeholder:text-gray-500"
                       placeholder="+223 XX XX XX XX"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-lg font-bold text-gray-900 mb-3">
+                    <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                       Sujet *
                     </label>
                     <select
                       required
-                      className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium"
+                      className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900"
                     >
                       <option value="">Sélectionnez un sujet</option>
                       <option value="admission">
@@ -348,13 +339,13 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-lg font-bold text-gray-900 mb-3">
+                    <label className="block text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
                       Message *
                     </label>
                     <textarea
                       required
                       rows={6}
-                      className="w-full px-6 py-4 border-2 border-blue-200 rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium resize-none"
+                      className="w-full px-4 py-3 sm:px-6 sm:py-4 border-2 border-blue-200 rounded-lg sm:rounded-xl focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm font-medium text-sm sm:text-base text-gray-900 placeholder:text-gray-500 resize-none"
                       placeholder="Décrivez votre demande en détail..."
                     ></textarea>
                   </div>
@@ -391,17 +382,17 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
-              <MessageSquare className="w-4 h-4 mr-2" />
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
+              <MessageSquare className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Questions Fréquentes
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
               Questions Fréquentes
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               Trouvez rapidement les réponses à vos questions les plus courantes
             </p>
           </div>
@@ -505,8 +496,8 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full px-6 py-3 text-sm font-semibold mb-6 shadow-lg">
               <MapPin className="w-4 h-4 mr-2" />

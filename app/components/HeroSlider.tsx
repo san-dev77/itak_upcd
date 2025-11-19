@@ -11,7 +11,6 @@ import {
   Globe,
   Play,
   ArrowRight,
-  Star,
 } from "lucide-react";
 
 const slides = [
@@ -79,7 +78,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative h-[700px] overflow-hidden">
+    <div className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -95,165 +94,66 @@ export default function HeroSlider() {
               className={`absolute inset-0 bg-gradient-to-br ${slide.bgColor}`}
             ></div>
 
-            {/* Image with parallax effect */}
+            {/* Image */}
             <Image
               src={slide.image}
               alt={slide.title}
               fill
-              className="object-cover transition-transform duration-[7000ms] ease-out"
+              className="object-cover"
               priority={index === 0}
+              sizes="100vw"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
               }}
             />
 
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
-
-            {/* Animated particles background */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-              <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-pulse animation-delay-200"></div>
-              <div className="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-pulse animation-delay-400"></div>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/50"></div>
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                  {/* Left side - Text content */}
-                  <div className="text-white space-y-6">
-                    {/* Badge */}
-                    <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium animate-fade-in-up border border-white/20">
-                      <slide.icon className="w-5 h-5 text-blue-400 mr-2" />
-                      <span className="text-blue-300">{slide.stats}</span>
-                    </div>
-
-                    {/* Title */}
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up animation-delay-200">
-                      <span className="block text-white">
-                        {slide.title.split(" ")[0]}
-                      </span>
-                      <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                        {slide.title.split(" ").slice(1).join(" ")}
-                      </span>
-                    </h1>
-
-                    {/* Subtitle */}
-                    <p className="text-2xl md:text-3xl font-semibold text-blue-300 animate-fade-in-up animation-delay-400">
-                      {slide.subtitle}
-                    </p>
-
-                    {/* Description */}
-                    <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-600">
-                      {slide.description}
-                    </p>
-
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up animation-delay-800">
-                      <Link
-                        href={slide.link1}
-                        className="group inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-                      >
-                        <span>{slide.cta1}</span>
-                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Link>
-                      <Link
-                        href={slide.link2}
-                        className="group inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all backdrop-blur-sm"
-                      >
-                        <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                        <span>{slide.cta2}</span>
-                      </Link>
-                    </div>
-
-                    {/* Trust indicators */}
-                    <div className="flex items-center space-x-6 pt-6 animate-fade-in-up animation-delay-1000">
-                      <div className="flex items-center space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="w-4 h-4 text-yellow-400 fill-current"
-                          />
-                        ))}
-                        <span className="text-sm text-gray-300 ml-2">
-                          Excellence reconnue
-                        </span>
-                      </div>
-                      <div className="h-4 w-px bg-gray-400"></div>
-                      <div className="text-sm text-gray-300">
-                        Université agréée par l&apos;État
-                      </div>
-                    </div>
+              <div className="container mx-auto px-4 sm:px-6">
+                <div className="max-w-3xl">
+                  {/* Badge */}
+                  <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium mb-4 sm:mb-6 border border-white/20">
+                    <slide.icon className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 mr-2" />
+                    <span className="text-blue-300">{slide.stats}</span>
                   </div>
 
-                  {/* Right side - Stats cards */}
-                  <div className="hidden lg:block space-y-4 animate-fade-in-up animation-delay-1200">
-                    <div className="group bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                      <div className="text-4xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform">
-                        2
-                      </div>
-                      <div className="text-white font-bold text-lg">
-                        Facultés d&apos;Excellence
-                      </div>
-                      <div className="text-blue-200 text-sm font-medium">
-                        FDECO & FAST
-                      </div>
-                    </div>
-                    <div className="group bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                      <div className="text-4xl font-bold text-indigo-400 mb-2 group-hover:scale-110 transition-transform">
-                        20+
-                      </div>
-                      <div className="text-white font-bold text-lg">
-                        Filières Spécialisées
-                      </div>
-                      <div className="text-indigo-200 text-sm font-medium">
-                        DUT, Licence, Master
-                      </div>
-                    </div>
-                    <div className="group bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                      <div className="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform">
-                        85%
-                      </div>
-                      <div className="text-white font-bold text-lg">
-                        Taux d&apos;Insertion
-                      </div>
-                      <div className="text-cyan-200 text-sm font-medium">
-                        Emploi garanti
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  {/* Title */}
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-3 sm:mb-4 text-white">
+                    <span className="block">{slide.title.split(" ")[0]}</span>
+                    <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                      {slide.title.split(" ").slice(1).join(" ")}
+                    </span>
+                  </h1>
 
-                {/* Mobile Stats - Bottom overlay */}
-                <div className="lg:hidden absolute bottom-20 left-0 right-0">
-                  <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 text-center border border-white/30">
-                        <div className="text-2xl font-bold text-blue-400 mb-1">
-                          2
-                        </div>
-                        <div className="text-white text-sm font-semibold">
-                          Facultés
-                        </div>
-                      </div>
-                      <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 text-center border border-white/30">
-                        <div className="text-2xl font-bold text-indigo-400 mb-1">
-                          20+
-                        </div>
-                        <div className="text-white text-sm font-semibold">
-                          Filières
-                        </div>
-                      </div>
-                      <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 text-center border border-white/30">
-                        <div className="text-2xl font-bold text-cyan-400 mb-1">
-                          85%
-                        </div>
-                        <div className="text-white text-sm font-semibold">
-                          Insertion
-                        </div>
-                      </div>
-                    </div>
+                  {/* Subtitle */}
+                  <p className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-300 mb-3 sm:mb-4">
+                    {slide.subtitle}
+                  </p>
+
+                  {/* Description - Hidden on mobile, shown on tablet+ */}
+                  <p className="hidden md:block text-base md:text-lg text-gray-200 leading-relaxed mb-6 max-w-2xl">
+                    {slide.description}
+                  </p>
+
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <Link
+                      href={slide.link1}
+                      className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <span>{slide.cta1}</span>
+                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
+                    </Link>
+                    <Link
+                      href={slide.link2}
+                      className="inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-gray-900 px-6 py-3 sm:px-8 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base transition-all backdrop-blur-sm"
+                    >
+                      <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                      <span>{slide.cta2}</span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -262,46 +162,36 @@ export default function HeroSlider() {
         </div>
       ))}
 
-      {/* Navigation Arrows - Redesigned */}
+      {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/30"
+        className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 sm:p-3 md:p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/30"
+        aria-label="Slide précédent"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/30"
+        className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 sm:p-3 md:p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/30"
+        aria-label="Slide suivant"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
       </button>
 
-      {/* Progress Indicators - Redesigned */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      {/* Progress Indicators */}
+      <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 sm:space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`relative h-1 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "w-12 bg-blue-500"
-                : "w-6 bg-white/50 hover:bg-white/70"
+                ? "w-8 sm:w-10 md:w-12 bg-blue-500"
+                : "w-4 sm:w-5 md:w-6 bg-white/50 hover:bg-white/70"
             }`}
-          >
-            {index === currentSlide && (
-              <div className="absolute inset-0 bg-blue-400 rounded-full animate-pulse"></div>
-            )}
-          </button>
+            aria-label={`Aller au slide ${index + 1}`}
+          />
         ))}
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 right-8 text-white/70 animate-bounce">
-        <div className="flex flex-col items-center space-y-2">
-          <div className="text-sm font-medium">Découvrir</div>
-          <div className="w-px h-8 bg-white/50"></div>
-          <ChevronRight className="w-4 h-4 rotate-90" />
-        </div>
       </div>
     </div>
   );
